@@ -1,0 +1,10 @@
+name 'rundeck'
+maintainer 'Austin Heiman'
+maintainer_email 'atheimanksu@gmail.com'
+license 'all_rights'
+description 'Installs/Configures rundeck'
+long_description 'Installs/Configures rundeck'
+version '0.1.0'
+
+depends 'java', '~> 1.39.0'
+depends 'mysql', '~> 6.1.2'

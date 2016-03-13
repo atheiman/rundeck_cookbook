@@ -1,0 +1,23 @@
+---
+driver:
+  name: vagrant
+  network:
+    - ['forwarded_port', {guest: 4440, host: 4440}]
+    - ['forwarded_port', {guest: 4443, host: 4443}]
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: centos-6.6
+
+suites:
+  - name: default
+    run_list:
+      - recipe[rundeck::default]
+    data_bags_path: 'test/integration/data_bags'
+    attributes:
+      rundeck:
+        mysql:
+          data_dir:
+            mount_device: '/dev/sda1'

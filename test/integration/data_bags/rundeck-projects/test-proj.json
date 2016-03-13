@@ -1,0 +1,8 @@
+{
+  "id": "test-proj",
+  "name": "Test Project",
+  "readme": "# Test Project Readme
+
+This test project was created with Chef!",
+  "motd": "Test MOTD created by Chef!"
+}
